@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww16460\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 This document outlines the code for the water level sensor:\
+\
+Two supporting codes were used from arduino projects to calibrate and test the sensor.\
+\
+Values from the serial monitor were obtained to use as threshold(low, upper) values for what level of the sensor the water was at.\
+Three different levels were used, the bottom, middle and top of the sensor. \
+\
+Using the low and upper thresholds, the sensor was used to light up three LED\'92s based off of the liquid level. \
+\
+If the output values were below the low threshold, the RED LED would light up, if it was in between the low and upper thresholds, the BLUE LED would light up and finally if it exceeded the upper value, the GREEN LED would light up indicating that the level of the water was near the top.}
