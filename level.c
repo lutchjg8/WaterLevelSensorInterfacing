@@ -56,13 +56,25 @@ int main (void)
     {
       PORTD |= _BV(PORTD2);
     }
+    else
+    {
+      PORTD |= ~_BV(PORTD2);
+    }
     if(val > lowerThresh & val < upperThresh)
     {
       PORTD |= _BV(PORTD3);
     }
+    else
+    {
+      PORTD |= ~_BV(PORTD3);
+    }
     if(val > upperThresh)
     {
       PORTD |= _BV(PORTD4);
+    }
+    else
+    {
+      PORTD |= ~_BV(PORTD4);
     }
   }
 }
